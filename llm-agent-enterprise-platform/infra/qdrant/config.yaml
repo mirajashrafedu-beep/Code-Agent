@@ -1,0 +1,17 @@
+service:
+  http_port: 6333
+  grpc_port: 6334
+
+storage:
+  storage_path: ./storage
+  snapshots_path: ./snapshots
+  on_disk_payload: true
+
+hnsw_index:
+  m: 16
+  ef_construct: 100
+  full_scan_threshold: 10000
+  max_indexing_threads: 0
+  on_disk: false
+
+telemetry_disabled: true
